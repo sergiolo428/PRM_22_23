@@ -1,0 +1,1079 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45782,       1071]
+NotebookOptionsPosition[     43573,       1030]
+NotebookOutlinePosition[     44282,       1053]
+CellTagsIndexPosition[     44177,       1048]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  "\"\<C:\\\\Universidad\\\\PRM\\\\PRM_22_23\\\\Practica \
+2\\\\drawTxPRM.m\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8750739436377997`*^9, 3.8750739902012577`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"338be797-52d5-4383-8a0d-fb4ececd83f1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Ver", " ", "menu", " ", "para", " ", "dibujar"}], "*)"}], 
+  RowBox[{"?", " ", "drawTxPRM`* "}]}]], "Input",
+ CellChangeTimes->{{3.8750739921472635`*^9, 
+  3.8750740829915657`*^9}},ExpressionUUID->"9187da3c-340d-43c6-852f-\
+14752d061057"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"],
+           ImageSizeCache->{10., {3., 7.}}], " ", 
+          StyleBox["drawTxPRM`", "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], " ", 
+              StyleBox["drawTxPRM`", "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 StyleBox["DrawPacketTx", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-468bf062-56c7-488c-bc36-16d58a255463", {
+                   "DrawPacketTx", "drawTxPRM`"}, False},
+                 ButtonNote->"drawTxPRM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["GetIniParDraw", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-468bf062-56c7-488c-bc36-16d58a255463", {
+                   "GetIniParDraw", "drawTxPRM`"}, False},
+                 ButtonNote->"drawTxPRM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SetIniParDraw", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-468bf062-56c7-488c-bc36-16d58a255463", {
+                   "SetIniParDraw", "drawTxPRM`"}, False},
+                 ButtonNote->"drawTxPRM`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DrawWin", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-468bf062-56c7-488c-bc36-16d58a255463", {
+                   "DrawWin", "drawTxPRM`"}, False},
+                 ButtonNote->"drawTxPRM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SelectPacketInWin", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-468bf062-56c7-488c-bc36-16d58a255463", {
+                   "SelectPacketInWin", "drawTxPRM`"}, False},
+                 ButtonNote->"drawTxPRM`",
+                 Evaluator->Automatic], ""}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.31666666666666665`]}}}],
+             ImageMargins->{{10, 0}, {0, 2}}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellChangeTimes->{{3.875074012231643*^9, 3.8750740740369625`*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"19120cfb-8a6b-44cf-80af-7cc636e29d44"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"DrawPacketTx[arr] to draw one packet transmission\"\
+\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[
+           TagBox[GridBox[{
+              {
+               StyleBox[
+                TagBox[
+                 TooltipBox[
+                  StyleBox["\<\" Definitions\"\>", "InformationRowLabel",
+                   StripOnInput->False],
+                  "\"Definitions\"",
+                  TooltipStyle->"TextStyling"],
+                 Annotation[#, "Definitions", "Tooltip"]& ], "DialogStyle",
+                StripOnInput->False]},
+              {
+               TemplateBox[{"\"\[ThinSpace]\"", 
+                 GridBox[{{
+                    RowBox[{
+                    
+                    RowBox[{
+                    "DrawPacketTx", "[", "drawTxPRM`private`arr$_", "]"}], 
+                    ":=", 
+                    RowBox[{"Module", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "=", 
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "1", "\[RightDoubleBracket]"}]}], ",", 
+                    RowBox[{"drawTxPRM`private`tI$", "=", 
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "2", "\[RightDoubleBracket]"}]}], ",", 
+                    RowBox[{"drawTxPRM`private`x$", "=", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "1", "\[RightDoubleBracket]"}], "-", 
+                    "drawTxPRM`private`tw$76345"}]}]}], "}"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`x$", "\[GreaterEqual]", "0"}], 
+                    ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`x$", "+", 
+                    "drawTxPRM`private`tI$", "+", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "4", "\[RightDoubleBracket]"}], "\[GreaterEqual]", "2"}], 
+                    ",", 
+                    FractionBox[
+                    "drawTxPRM`private`tp$76345", 
+                    "drawTxPRM`private`nSect$76345"], ",", 
+                    RowBox[{"drawTxPRM`private`tack$76345", "+", 
+                    RowBox[{"2", " ", "drawTxPRM`private`tp$76345"}]}]}], 
+                    "]"}]}], "\[LessEqual]", "drawTxPRM`private`ww$76345"}], 
+                    ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "4", "\[RightDoubleBracket]"}], "\[GreaterEqual]", "2"}], 
+                    ",", 
+                    RowBox[{"Graphics", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"EdgeForm", "[", "Thin", "]"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"BitAnd", "[", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "4", "\[RightDoubleBracket]"}], ",", "1"}], "]"}], 
+                    "\[Equal]", "1"}], ",", "Black", ",", "Gray"}], "]"}], 
+                    ",", 
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"drawTxPRM`private`xt$", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tI$"}], ",", 
+                    RowBox[{"-", "drawTxPRM`private`HiP$76345"}]}], "}"}]}], 
+                    "]"}], ",", "Dashed", ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"drawTxPRM`private`xt$", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    FractionBox[
+                    "drawTxPRM`private`tp$76345", 
+                    "drawTxPRM`private`nSect$76345"]}], ",", 
+                    FractionBox[
+                    "drawTxPRM`private`HiW$76345", 
+                    "drawTxPRM`private`nSect$76345"]}], "}"}]}], "}"}], "]"}],
+                     ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tI$"}], ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    FractionBox[
+                    "drawTxPRM`private`tp$76345", 
+                    "drawTxPRM`private`nSect$76345"], "+", 
+                    "drawTxPRM`private`tI$"}], ",", 
+                    FractionBox[
+                    "drawTxPRM`private`HiW$76345", 
+                    "drawTxPRM`private`nSect$76345"]}], "}"}]}], "}"}], "]"}],
+                     ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`GetTextPack", "[", 
+                    "drawTxPRM`private`arr$", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    FractionBox[
+                    "drawTxPRM`private`tp$76345", 
+                    "drawTxPRM`private`nSect$76345"], "+", 
+                    FractionBox["drawTxPRM`private`tI$", "2"]}], ",", 
+                    FractionBox[
+                    "drawTxPRM`private`HiW$76345", 
+                    "drawTxPRM`private`nSect$76345"]}], "}"}]}], "]"}]}], 
+                    "}"}], "]"}], ",", 
+                    RowBox[{"Graphics", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"EdgeForm", "[", "Thin", "]"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"BitAnd", "[", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`arr$", "\[LeftDoubleBracket]", 
+                    "4", "\[RightDoubleBracket]"}], ",", "1"}], "]"}], 
+                    "\[Equal]", "1"}], ",", "Red", ",", "Pink"}], "]"}], ",", 
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"drawTxPRM`private`xt$", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tI$"}], ",", 
+                    RowBox[{"-", "drawTxPRM`private`HiP$76345"}]}], "}"}]}], 
+                    "]"}], ",", "Dashed", ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"drawTxPRM`private`xt$", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tp$76345"}], ",", 
+                    "drawTxPRM`private`HiW$76345"}], "}"}]}], "}"}], "]"}], 
+                    ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tI$"}], ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tp$76345", "+", 
+                    "drawTxPRM`private`tI$"}], ",", 
+                    "drawTxPRM`private`HiW$76345"}], "}"}]}], "}"}], "]"}], 
+                    ",", 
+                    RowBox[{"EdgeForm", "[", "Thin", "]"}], ",", "Pink", ",", 
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tp$76345", "+", 
+                    "drawTxPRM`private`tI$"}], ",", 
+                    "drawTxPRM`private`HiW$76345"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tp$76345", "+", 
+                    "drawTxPRM`private`tI$", "+", 
+                    "drawTxPRM`private`tack$76345"}], ",", 
+                    
+                    RowBox[{"drawTxPRM`private`HiW$76345", "+", 
+                    "drawTxPRM`private`HiP$76345"}]}], "}"}]}], "]"}], ",", 
+                    "Black", ",", "Dashed", ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tp$76345", "+", 
+                    "drawTxPRM`private`tI$"}], ",", 
+                    "drawTxPRM`private`HiW$76345"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    RowBox[{"2", " ", "drawTxPRM`private`tp$76345"}], "+", 
+                    "drawTxPRM`private`tI$"}], ",", "0"}], "}"}]}], "}"}], 
+                    "]"}], ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    "drawTxPRM`private`tp$76345", "+", 
+                    "drawTxPRM`private`tI$", "+", 
+                    "drawTxPRM`private`tack$76345"}], ",", 
+                    "drawTxPRM`private`HiW$76345"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    RowBox[{"2", " ", "drawTxPRM`private`tp$76345"}], "+", 
+                    "drawTxPRM`private`tI$", "+", 
+                    "drawTxPRM`private`tack$76345"}], ",", "0"}], "}"}]}], 
+                    "}"}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    
+                    RowBox[{"drawTxPRM`private`GetTextPack", "[", 
+                    "drawTxPRM`private`arr$", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"drawTxPRM`private`xt$", "+", 
+                    FractionBox[
+                    
+                    RowBox[{"drawTxPRM`private`tp$76345", "+", 
+                    "drawTxPRM`private`tI$"}], "2"]}], ",", 
+                    FractionBox["drawTxPRM`private`HiW$76345", "2"]}], 
+                    "}"}]}], "]"}]}], "}"}], "]"}]}], "]"}], ",", 
+                    
+                    RowBox[{"drawTxPRM`private`DrawManually", "[", 
+                    "drawTxPRM`private`arr$", "]"}]}], "]"}], ",", 
+                    
+                    RowBox[{"drawTxPRM`private`DrawManually", "[", 
+                    "drawTxPRM`private`arr$", "]"}]}], "]"}]}], "]"}]}]}, {
+                   " "}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                "RowDefault"]}
+             },
+             DefaultBaseStyle->"Column",
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Column"],
+           FrameMargins->{{6, 0}, {3, 6}}], "\<\"\"\>"},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"drawTxPRM`DrawPacketTx\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"DrawPacketTx[arr] to draw one packet transmission\"\
+\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "DrawPacketTx[arr] to draw one packet transmission", "Documentation" -> 
+    None, "OwnValues" -> None, "UpValues" -> None, "DownValues" -> 
+    Information`InformationValueForm[
+     DownValues, drawTxPRM`DrawPacketTx, {drawTxPRM`DrawPacketTx[
+         Pattern[drawTxPRM`private`arr$, 
+          Blank[]]] :> 
+       Module[{drawTxPRM`private`xt$ = Part[drawTxPRM`private`arr$, 1], 
+          drawTxPRM`private`tI$ = Part[drawTxPRM`private`arr$, 2], 
+          drawTxPRM`private`x$ = 
+          Part[drawTxPRM`private`arr$, 1] - drawTxPRM`private`tw$76345}, 
+         If[drawTxPRM`private`x$ >= 0, 
+          If[
+          drawTxPRM`private`x$ + drawTxPRM`private`tI$ + 
+            If[Part[drawTxPRM`private`arr$, 4] >= 2, 
+              drawTxPRM`private`tp$76345/drawTxPRM`private`nSect$76345, 
+              drawTxPRM`private`tack$76345 + 2 drawTxPRM`private`tp$76345] <= 
+           drawTxPRM`private`ww$76345, 
+           If[Part[drawTxPRM`private`arr$, 4] >= 2, 
+            Graphics[{
+              EdgeForm[Thin], 
+              If[BitAnd[
+                 Part[drawTxPRM`private`arr$, 4], 1] == 1, Black, Gray], 
+              
+              Rectangle[{drawTxPRM`private`xt$, 0}, {
+               drawTxPRM`private`xt$ + drawTxPRM`private`tI$, -
+                drawTxPRM`private`HiP$76345}], Dashed, 
+              Line[{{drawTxPRM`private`xt$, 0}, {
+                drawTxPRM`private`xt$ + 
+                 drawTxPRM`private`tp$76345/drawTxPRM`private`nSect$76345, 
+                 drawTxPRM`private`HiW$76345/drawTxPRM`private`nSect$76345}}], 
+              
+              Line[{{drawTxPRM`private`xt$ + drawTxPRM`private`tI$, 0}, {
+                drawTxPRM`private`xt$ + 
+                 drawTxPRM`private`tp$76345/drawTxPRM`private`nSect$76345 + 
+                 drawTxPRM`private`tI$, drawTxPRM`private`HiW$76345/
+                 drawTxPRM`private`nSect$76345}}], 
+              Text[
+               drawTxPRM`private`GetTextPack[drawTxPRM`private`arr$], {
+               drawTxPRM`private`xt$ + 
+                drawTxPRM`private`tp$76345/drawTxPRM`private`nSect$76345 + 
+                drawTxPRM`private`tI$/2, drawTxPRM`private`HiW$76345/
+                drawTxPRM`private`nSect$76345}]}], 
+            Graphics[{
+              EdgeForm[Thin], 
+              If[BitAnd[
+                 Part[drawTxPRM`private`arr$, 4], 1] == 1, Red, Pink], 
+              
+              Rectangle[{drawTxPRM`private`xt$, 0}, {
+               drawTxPRM`private`xt$ + drawTxPRM`private`tI$, -
+                drawTxPRM`private`HiP$76345}], Dashed, 
+              
+              Line[{{drawTxPRM`private`xt$, 0}, {
+                drawTxPRM`private`xt$ + drawTxPRM`private`tp$76345, 
+                 drawTxPRM`private`HiW$76345}}], 
+              
+              Line[{{drawTxPRM`private`xt$ + drawTxPRM`private`tI$, 0}, {
+                drawTxPRM`private`xt$ + drawTxPRM`private`tp$76345 + 
+                 drawTxPRM`private`tI$, drawTxPRM`private`HiW$76345}}], 
+              EdgeForm[Thin], Pink, 
+              
+              Rectangle[{
+               drawTxPRM`private`xt$ + drawTxPRM`private`tp$76345 + 
+                drawTxPRM`private`tI$, drawTxPRM`private`HiW$76345}, {
+               drawTxPRM`private`xt$ + drawTxPRM`private`tp$76345 + 
+                drawTxPRM`private`tI$ + drawTxPRM`private`tack$76345, 
+                drawTxPRM`private`HiW$76345 + drawTxPRM`private`HiP$76345}], 
+              Black, Dashed, 
+              
+              Line[{{drawTxPRM`private`xt$ + drawTxPRM`private`tp$76345 + 
+                 drawTxPRM`private`tI$, drawTxPRM`private`HiW$76345}, {
+                drawTxPRM`private`xt$ + 2 drawTxPRM`private`tp$76345 + 
+                 drawTxPRM`private`tI$, 0}}], 
+              
+              Line[{{drawTxPRM`private`xt$ + drawTxPRM`private`tp$76345 + 
+                 drawTxPRM`private`tI$ + drawTxPRM`private`tack$76345, 
+                 drawTxPRM`private`HiW$76345}, {
+                drawTxPRM`private`xt$ + 2 drawTxPRM`private`tp$76345 + 
+                 drawTxPRM`private`tI$ + drawTxPRM`private`tack$76345, 0}}], 
+              Text[
+               drawTxPRM`private`GetTextPack[drawTxPRM`private`arr$], {
+               drawTxPRM`private`xt$ + (drawTxPRM`private`tp$76345 + 
+                  drawTxPRM`private`tI$)/2, drawTxPRM`private`HiW$76345/
+                2}]}]], 
+           drawTxPRM`private`DrawManually[drawTxPRM`private`arr$]], 
+          drawTxPRM`private`DrawManually[drawTxPRM`private`arr$]]]}], 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, "Attributes" -> {}, "FullName" -> 
+    "drawTxPRM`DrawPacketTx"|>, False]]], "Print",
+ CellTags->
+  "Info-468bf062-56c7-488c-bc36-16d58a255463",ExpressionUUID->"0d3dbec6-2069-\
+4f19-89f8-49197f31d719"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "Datos", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"la", "=", "80"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"mu", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nmuestras", "=", "1000"}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.8750748220103292`*^9, 3.8750748529504285`*^9}, {
+  3.8750749050960865`*^9, 3.8750749219606547`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"c835033f-8877-4d44-9d4f-3f01054ef7ea"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Definimos", " ", "FIFO"}], "*)"}], " ", 
+  RowBox[{
+   RowBox[{"Fifo", "[", 
+    RowBox[{"arri_", ",", "serv_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "time"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"n", "=", "0"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"time", "=", 
+       RowBox[{"arri", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Map", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"n", "++"}], ";", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"time", ">=", "#"}], ",", 
+             RowBox[{"time", "+=", 
+              RowBox[{"serv", "[", 
+               RowBox[{"[", "n", "]"}], "]"}]}], ",", 
+             RowBox[{"time", "=", 
+              RowBox[{"#", "+", 
+               RowBox[{"serv", "[", 
+                RowBox[{"[", "n", "]"}], "]"}]}]}]}], "]"}]}], ")"}], "&"}], 
+        ",", "arri"}], "]"}]}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.875074112612155*^9, 3.875074145727008*^9}, {
+  3.8750742727701654`*^9, 3.8750743054238524`*^9}, {3.8750743713848057`*^9, 
+  3.875074428819682*^9}, {3.875074506913149*^9, 3.8750745626065974`*^9}, {
+  3.875074687096861*^9, 
+  3.875074723464117*^9}},ExpressionUUID->"e0b4d826-b3e4-47a2-8f70-\
+5d4a7c13a151"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Creamos", " ", "funcion", " ", 
+   RowBox[{"llegadas", "/", "servicio"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.875074732099986*^9, 
+  3.8750747472545624`*^9}},ExpressionUUID->"7a92988a-acba-4b2c-8663-\
+922e5761ed3f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"RndExp", "[", "val_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Log", "[", 
+       RowBox[{"RandomReal", "[", "]"}], "]"}]}], "/", "val"}], "//", "N"}]}],
+   ";"}]], "Input",
+ CellChangeTimes->{{3.87507475955156*^9, 3.875074790004157*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"87e92de4-86ef-4f8a-a5c9-51c29b97f84e"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Generamos", " ", "llegadas", " ", "y", " ", "servicio"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.8750748020556383`*^9, 3.875074813038251*^9}, {
+   3.8750750345248175`*^9, 3.8750750352590666`*^9}, 
+   3.8750751569680557`*^9},ExpressionUUID->"15479bd4-92ca-4fab-b79f-\
+cc9e0305ca25"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"InterArrivals", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"RndExp", "[", "la", "]"}], ",", "nmuestras"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Arrivals", "=", 
+   RowBox[{"Accumulate", "[", "InterArrivals", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Servicios", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"RndExp", "[", "mu", "]"}], ",", "nmuestars"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Departures", "=", 
+   RowBox[{"Fifo", "[", 
+    RowBox[{"Arrivals", ",", "Servicios"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.875074857253373*^9, 3.8750749525496783`*^9}, {
+  3.87507516546541*^9, 3.875075177802616*^9}, {3.8750767788901463`*^9, 
+  3.875076779030391*^9}},
+ CellLabel->
+  "In[172]:=",ExpressionUUID->"9ebe7039-521b-45cb-9eda-1860f180bc91"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Calculamos", " ", "los", " ", "Injection", " ", "times"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.875076785976313*^9, 
+  3.8750768030956297`*^9}},ExpressionUUID->"e6922733-2faa-4755-8df4-\
+4b344d461a1e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"InjectionTimes", "=", " ", 
+   RowBox[{"Departures", "-", "Servicios"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.875076851555916*^9, 3.875076880391885*^9}},
+ CellLabel->
+  "In[177]:=",ExpressionUUID->"d9ea4a61-b0c2-44e2-abcb-a39ba05b49cc"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Generamos", " ", "los", " ", "paquetes"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.8750768925006037`*^9, 3.8750768944776745`*^9}, {
+  3.8750769260391073`*^9, 
+  3.875076928589678*^9}},ExpressionUUID->"00c324a8-258e-4f39-8767-\
+70db9efb280d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"listapaquetes", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"InjectionTimes", "[", 
+        RowBox[{"[", "n", "]"}], "]"}], ",", 
+       RowBox[{"Servicios", "[", 
+        RowBox[{"[", "n", "]"}], "]"}], ",", "n", ",", "0", ",", "0"}], "}"}],
+      ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", "nmuestras"}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.875076941648742*^9, 3.8750770169048386`*^9}},
+ CellLabel->
+  "In[178]:=",ExpressionUUID->"73084790-e6f4-446b-b0cc-bfdf702e776a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Hacemos", " ", "set", " ", "de", " ", "la", " ", "configuracion"}], 
+   "*)"}], 
+  RowBox[{
+   RowBox[{"SetIniParDraw", "[", 
+    RowBox[{"0.009", ",", "0.003"}], "]"}], 
+   RowBox[{"(*", 
+    RowBox[{"[", 
+     RowBox[{"tiempo_progpagacion", ",", 
+      RowBox[{"tiempo_supervision", "_ack"}]}], "]"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"DrawWin", "[", 
+      RowBox[{"0", ",", "0.1", ",", "5"}], "]"}], ",", " ", 
+     RowBox[{"Map", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"DrawPacketTx", "[", "#", "]"}], ")"}], "&"}], ",", 
+       "listapaqueInjection"}], "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8750770241765347`*^9, 3.8750771532940235`*^9}, {
+  3.875077583476412*^9, 3.8750775969496703`*^9}, {3.8750776287468014`*^9, 
+  3.87507767084205*^9}, {3.875077715776572*^9, 3.875077720547434*^9}},
+ CellLabel->
+  "In[189]:=",ExpressionUUID->"f9ba124b-6778-472e-a8fa-cd26ee68ba50"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {GrayLevel[0], LineBox[{{0, 0}, {0.1, 0}}], 
+    LineBox[{{0, 0.025}, {0.1, 0.025}}]}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.005052356565136484, 0}, \
+{0.03216494364920256, -0.0025000000000000005}], 
+    {Dashing[{Small, Small}], 
+     LineBox[{{0.005052356565136484, 0}, {0.014052356565136483`, 0.025}}], 
+     LineBox[{{0.03216494364920256, 0}, {0.04116494364920256, 0.025}}], 
+     {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+      RectangleBox[{0.04116494364920256, 0.025}, \
+{0.04416494364920256, 0.027500000000000004}], 
+      {GrayLevel[0], Dashing[{Small, Small}], 
+       LineBox[{{0.04116494364920256, 0.025}, {0.050164943649202556`, 0}}], 
+       LineBox[{{0.04416494364920256, 0.025}, {0.05316494364920256, 0}}], 
+       InsetBox["\<\"1\"\>", {0.02310865010716952, 0.0125}]}}}}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.032164943649202554, 0}, \
+{0.04929152837679299, -0.0025000000000000005}], 
+    {Dashing[{Small, Small}], 
+     LineBox[{{0.032164943649202554`, 0}, {0.041164943649202555`, 0.025}}], 
+     LineBox[{{0.04929152837679299, 0}, {0.05829152837679298, 0.025}}], 
+     {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+      RectangleBox[{0.05829152837679298, 0.025}, \
+{0.061291528376792984, 0.027500000000000004}], 
+      {GrayLevel[0], Dashing[{Small, Small}], 
+       LineBox[{{0.05829152837679298, 0.025}, {0.06729152837679299, 0}}], 
+       LineBox[{{0.061291528376792984`, 0.025}, {0.07029152837679298, 0}}], 
+       InsetBox["\<\"2\"\>", {0.04522823601299777, 0.0125}]}}}}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.04929152837679299, 0}, \
+{0.060838631851560306, -0.0025000000000000005}], 
+    {Dashing[{Small, Small}], 
+     LineBox[{{0.04929152837679299, 0}, {0.05829152837679299, 0.025}}], 
+     LineBox[{{0.060838631851560306`, 0}, {0.0698386318515603, 0.025}}], 
+     {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+      RectangleBox[{0.0698386318515603, 0.025}, \
+{0.07283863185156031, 0.027500000000000004}], 
+      {GrayLevel[0], Dashing[{Small, Small}], 
+       LineBox[{{0.0698386318515603, 0.025}, {0.07883863185156031, 0}}], 
+       LineBox[{{0.07283863185156031, 0.025}, {0.08183863185156032, 0}}], 
+       InsetBox["\<\"3\"\>", {0.05956508011417665, 0.0125}]}}}}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.060838631851560306, 0}, \
+{0.06502789169629136, -0.0025000000000000005}], 
+    {Dashing[{Small, Small}], 
+     LineBox[{{0.060838631851560306`, 0}, {0.0698386318515603, 0.025}}], 
+     LineBox[{{0.06502789169629136, 0}, {0.07402789169629136, 0.025}}], 
+     {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+      RectangleBox[{0.07402789169629136, 0.025}, \
+{0.07702789169629136, 0.027500000000000004}], 
+      {GrayLevel[0], Dashing[{Small, Small}], 
+       LineBox[{{0.07402789169629136, 0.025}, {0.08302789169629135, 0}}], 
+       LineBox[{{0.07702789169629136, 0.025}, {0.08602789169629135, 0}}], 
+       InsetBox["\<\"4\"\>", {0.06743326177392583, 0.0125}]}}}}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.06502789169629136, 0}, \
+{0.07307251137267944, -0.0025000000000000005}], 
+    {Dashing[{Small, Small}], 
+     LineBox[{{0.06502789169629136, 0}, {0.07402789169629136, 0.025}}], 
+     LineBox[{{0.07307251137267944, 0}, {0.08207251137267943, 0.025}}], 
+     {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+      RectangleBox[{0.08207251137267943, 0.025}, \
+{0.08507251137267943, 0.027500000000000004}], 
+      {GrayLevel[0], Dashing[{Small, Small}], 
+       LineBox[{{0.08207251137267943, 0.025}, {0.09107251137267944, 0}}], 
+       LineBox[{{0.08507251137267943, 0.025}, {0.09407251137267944, 0}}], 
+       InsetBox["\<\"0\"\>", {0.0735502015344854, 0.0125}]}}}}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.07307251137267944, -0.0025000000000000005}, \
+{0.07978217375349259, 0}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.07307251137267944, 0}, {0.08207251137267943, 0.025}}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.07978217375349259, 0}, {0.08878217375349258, 0.025}}]}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.08878217375349258, 0.027500000000000004}, \
+{0.09178217375349258, 0.025}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.08878217375349258, 0.025}, {0.09778217375349259, 0}}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.09178217375349258, 0.025}, {0.1, 0.0021727048708127354`}}]}, 
+   InsetBox["\<\"1\"\>", {0.08092734256308601, 0.0125}], 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.07978217375349259, -0.0025000000000000005}, \
+{0.09496776314738321, 0}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.07978217375349259, 0}, {0.08878217375349258, 0.025}}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.09496776314738321, 0}, {0.1, 0.013978435701713322`}}]}, 
+   InsetBox["\<\"2\"\>", {0.0918749684504379, 0.0125}], 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.09496776314738321, -0.0025000000000000005}, \
+{0.09888315610575402, 0}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.09496776314738321, 0}, {0.1, 0.013978435701713322`}}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.09888315610575402, 0}, {0.1, 0.003102344150683305}}]}, 
+   {RGBColor[1, 0.5, 0.5], EdgeForm[Thickness[Tiny]], 
+    RectangleBox[{0.09888315610575402, -0.0025000000000000005}, {0.1, 0}]}, 
+   {GrayLevel[0], Dashing[{Small, Small}], 
+    LineBox[{{0.09888315610575402, 0}, {0.1, 0.003102344150683305}}]}},
+  AspectRatio->Automatic,
+  Axes->{True, False},
+  AxesOrigin->Automatic]], "Output",
+ CellChangeTimes->{{3.8750771448383207`*^9, 3.8750771548408227`*^9}, {
+  3.875077654927518*^9, 3.8750776738539424`*^9}, {3.875077717092353*^9, 
+  3.8750777216548443`*^9}},
+ CellLabel->
+  "Out[190]=",ExpressionUUID->"259e7a10-bea9-4312-9fbc-2735704d4e1f"]
+}, Open  ]]
+},
+WindowSize->{1152., 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.1 para Microsoft Windows (64-bit) (August 22, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ca2e2e57-9408-4ac0-a102-061d69bca67b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info-468bf062-56c7-488c-bc36-16d58a255463"->{
+  Cell[5693, 150, 25419, 578, 82, "Print",ExpressionUUID->"0d3dbec6-2069-4f19-89f8-49197f31d719",
+   CellTags->"Info-468bf062-56c7-488c-bc36-16d58a255463"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info-468bf062-56c7-488c-bc36-16d58a255463", 43996, 1042}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 282, 5, 43, "Input",ExpressionUUID->"338be797-52d5-4383-8a0d-fb4ececd83f1"],
+Cell[CellGroupData[{
+Cell[865, 29, 291, 7, 28, "Input",ExpressionUUID->"9187da3c-340d-43c6-852f-14752d061057"],
+Cell[1159, 38, 4531, 110, 114, "Output",ExpressionUUID->"19120cfb-8a6b-44cf-80af-7cc636e29d44"],
+Cell[5693, 150, 25419, 578, 82, "Print",ExpressionUUID->"0d3dbec6-2069-4f19-89f8-49197f31d719",
+ CellTags->"Info-468bf062-56c7-488c-bc36-16d58a255463"]
+}, Open  ]],
+Cell[31127, 731, 515, 12, 86, "Input",ExpressionUUID->"c835033f-8877-4d44-9d4f-3f01054ef7ea"],
+Cell[31645, 745, 1443, 38, 116, "Input",ExpressionUUID->"e0b4d826-b3e4-47a2-8f70-5d4a7c13a151"],
+Cell[33091, 785, 262, 6, 28, "Input",ExpressionUUID->"7a92988a-acba-4b2c-8663-922e5761ed3f"],
+Cell[33356, 793, 396, 11, 43, "Input",ExpressionUUID->"87e92de4-86ef-4f8a-a5c9-51c29b97f84e"],
+Cell[33755, 806, 326, 7, 28, "Input",ExpressionUUID->"15479bd4-92ca-4fab-b79f-cc9e0305ca25"],
+Cell[34084, 815, 896, 25, 135, "Input",ExpressionUUID->"9ebe7039-521b-45cb-9eda-1860f180bc91"],
+Cell[34983, 842, 248, 6, 28, "Input",ExpressionUUID->"e6922733-2faa-4755-8df4-4b344d461a1e"],
+Cell[35234, 850, 275, 6, 28, "Input",ExpressionUUID->"d9ea4a61-b0c2-44e2-abcb-a39ba05b49cc"],
+Cell[35512, 858, 282, 6, 28, "Input",ExpressionUUID->"00c324a8-258e-4f39-8767-70db9efb280d"],
+Cell[35797, 866, 596, 17, 43, "Input",ExpressionUUID->"73084790-e6f4-446b-b0cc-bfdf702e776a"],
+Cell[CellGroupData[{
+Cell[36418, 887, 1036, 28, 62, "Input",ExpressionUUID->"f9ba124b-6778-472e-a8fa-cd26ee68ba50"],
+Cell[37457, 917, 6100, 110, 157, "Output",ExpressionUUID->"259e7a10-bea9-4312-9fbc-2735704d4e1f"]
+}, Open  ]]
+}
+]
+*)
+
